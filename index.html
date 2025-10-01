@@ -6,78 +6,111 @@
     <title>Mawalkar & Co.</title>
     <style>
         body {
-            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-            background: #f5f7fa;
+            font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #f7f9fb;
             color: #222;
             margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
         header {
-            background: #1a2138;
-            color: #fff;
-            padding: 24px 0 16px 0;
+            background: #f7f9fb;
             text-align: center;
-            border-bottom: 2px solid #e1e4e8;
+            padding-top: 54px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e6e8ee;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.3em;
-            letter-spacing: 1.5px;
+        .logo {
+            font-size: 2.6em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #2a324b;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.25em;
+            color: #5271ff;
+            font-weight: 500;
+            margin-bottom: 22px;
+            letter-spacing: 1px;
         }
         main {
-            max-width: 700px;
-            margin: 40px auto 40px auto;
+            margin-top: 38px;
+            margin-bottom: 38px;
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 24px rgba(44,62,80,0.07);
-            padding: 40px 36px 30px 36px;
+            border-radius: 12px;
+            box-shadow: 0 6px 32px rgba(44,62,80,0.07);
+            padding: 48px 38px 37px 38px;
         }
         section {
-            margin-bottom: 32px;
+            margin-bottom: 36px;
         }
         section h2 {
-            font-size: 1.25em;
-            color: #1a2138;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
+            font-size: 1.18em;
+            color: #5271ff;
+            margin-bottom: 14px;
+            font-weight: 600;
+            letter-spacing: 0.6px;
         }
         p {
-            line-height: 1.6;
-            margin: 0 0 16px 0;
+            line-height: 1.7;
+            margin: 0 0 22px 0;
+            font-size: 1.08em;
+        }
+        .about-founder {
+            margin-bottom: 12px;
         }
         .contact {
-            font-size: 1em;
-            color: #222;
-            margin-top: 32px;
-            padding-top: 16px;
-            border-top: 1px solid #e1e4e8;
+            font-size: 1.08em;
+            color: #2a324b;
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid #e6e8ee;
         }
-        @media (max-width: 700px) {
+        .contact a {
+            color: #5271ff;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 800px) {
             main {
-                padding: 18px 12px;
+                padding: 20px 8px;
+            }
+            .container {
+                padding: 0 10px;
             }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mawalkar & Co.</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Company Overview</h2>
-            <p>
-                We support clients in identifying and evaluating potential opportunities through focused research and disciplined analysis. Our work combines market understanding with financial insight to provide a clear view of industries, companies, and trends. We assist in the early stages of the investment process, helping clients prepare, assess, and advance opportunities with clarity and efficiency.
-            </p>
-        </section>
-        <section>
-            <h2>About the Founder</h2>
-            <p>
-                Krish Mawalkar is the founder and principal of Mawalkar & Co., an independent advisory firm serving investors and business leaders. He previously co-founded Arlington Consulting Group & Associates LLC, a strategy consulting firm specializing in market research and advisory services for family- and founder-owned businesses. Krish has also held internships at The Federal Reserve, where he focused on Mergers & Acquisitions and AI-driven research initiatives, J.P. Morgan Chase in Machine Learning & Intelligence Operations, U.S. Bank, and a Pittsburgh-based sell-side M&A investment bank. In addition, he contributes as a Research Assistant at Carnegie Mellon University’s Tepper School of Business, supporting projects in the Accounting AI Research Lab and the Center for Behavioral and Decision Research.
-            </p>
-        </section>
-        <div class="contact">
-            <strong>Contact:</strong> <a href="mailto:mawalkar@cmu.edu">mawalkar@cmu.edu</a>
-        </div>
-    </main>
+    <div class="container">
+        <header>
+            <div class="logo">Mawalkar & Co.</div>
+            <div class="tagline">Independent Advisory & Investment Research</div>
+        </header>
+        <main>
+            <section>
+                <h2>Company Overview</h2>
+                <p>
+                    We support clients in identifying and evaluating potential opportunities through focused research and disciplined analysis. Our work combines market understanding with financial insight to provide a clear view of industries, companies, and trends. We assist in the early stages of the investment process, helping clients prepare, assess, and advance opportunities with clarity and efficiency.
+                </p>
+            </section>
+            <section>
+                <h2>About the Founder</h2>
+                <p class="about-founder">
+                    Krish Mawalkar is the founder and principal of Mawalkar & Co., an independent advisory firm serving investors and business leaders. He previously co-founded Arlington Consulting Group & Associates LLC, a strategy consulting firm specializing in market research and advisory services for family- and founder-owned businesses. Krish has also held internships at The Federal Reserve, where he focused on Mergers & Acquisitions and AI-driven research initiatives, J.P. Morgan Chase in Machine Learning & Intelligence Operations, U.S. Bank, and a Pittsburgh-based sell-side M&A investment bank. In addition, he contributes as a Research Assistant at Carnegie Mellon University’s Tepper School of Business, supporting projects in the Accounting AI Research Lab and the Center for Behavioral and Decision Research.
+                </p>
+            </section>
+            <div class="contact">
+                <strong>Contact:</strong> <a href="mailto:mawalkar@cmu.edu">mawalkar@cmu.edu</a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
